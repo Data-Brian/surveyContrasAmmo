@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: url(contra3840x2160.jpg);
+            background-position: center;
+        }
+        #description{
+            text-align: center;
+            font-size: 3vw;
+            margin-bottom: 0px;
+            color: white;
+        }
+        #title{
+            text-align: center;
+            font-size: 6vw;
+            margin-top: 10px;
+            color: white;
+        }
+        @media (max-width: 600px){
+            #description{
+                font-size: 5vw;
+            }
+            #title{
+                font-size: 10vw;
+            }
+        }
+        #form-div{
+            background-color: rgba(255, 0, 0, .5);
+            color: white;
+            width: 55vw;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border-radius: 2%;
+        }
+        .wide{
+            width: 85%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p id="description">Thank You For Reloading At
+    <br>
+    <h1 id="title">CONTRAS AMMO SHACK</h1>
+    
+    <div id="form-div">
+    <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <br>
+        <input class="wide" id="name" type="name" placeholder="Bill Rizer" required>
+        
+        <br>
+        <label id="email-label" for="email">Email</label>
+        <br>
+        <input class="wide" id="email" type="email" placeholder="billRizer@contra.com" required>
+        
+        <br>
+        <label id="number-label" for="number">Number</label>
+        <br>
+        <input class="wide" id="tel" pattern="[0-9]{10}" minlength="10" maxlength="10" placeholder="5555555555" required>
+        
+        <br>
+        <br>
+        <label id="dropdown-label" for="dropdown">Weapon Of Choice</label>
+        <br>
+        <select id="dropdown" name="Weapons">
+            <option value="machine gun">Machine Gun</option>
+            <option value="spread shot">Spread Shot</option>
+            <option value="contra missiles">Contra Missiles</option>
+            <option value="homing rockets">Homing Rockets</option>
+            <option value="laser gun">Laser Gun</option>
+            <option value="flamethrower">Flamethrower</option>
+        </select>
+
+        <p id="radioDescription">How Many Aliens Have You Shredded?</p>
+        <label for="0-49">0-49</label>
+        <input type="radio" id="0-49" name="aliens" value="0-49">
+        <br>
+        <label for="50-99">50-99</label>
+        <input type="radio" id="50-99" name="aliens" value="50-99">
+        <br>
+        <label for="100orMore">100 OR MORE</label>
+        <input type="radio" id="100orMore" name="aliens" value="100 or more">
+
+        <p id="checkboxDescription">What Would You Like More Of In Our Ammo?</p>
+        <label for="moreExplosions">More Explosions</label>
+        <input type="checkbox" id="moreExplosions" name="moreOf1" value="explosions">
+        <br>
+        <label for="armorPiercing">More Armor Piercing</label>
+        <input type="checkbox" id="armorPiercing" name="moreOf2" value="armor piercing">
+        <br>
+        <label for="moreNoise">More Noise</label>
+        <input type="checkbox" id="moreNoise" name="moreOf3" value="noise">
+        <br>
+        <label for="moreSpeed">More Speed</label>
+        <input type="checkbox" id="moreSpeed" name="moreOf4" value="speed">
+
+        <br>
+        <br>
+        <input class="wide" id="comments" type="textarea" placeholder="Comments">
+
+        <br>
+        <br>
+        <input id="submit" type="submit" value="FIRE">
+    </form>
+    </div>
+</body>
+</html>
